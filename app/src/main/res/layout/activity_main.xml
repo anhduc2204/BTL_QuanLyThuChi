@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Quản lý chi tiêu"
+            android:textColor="#ffffff"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="130dp"
+            tools:layout_editor_absoluteY="14dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="250dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="35dp"
+        android:background="@color/white"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <TextView
+            android:id="@+id/tv_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Tên:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_sodu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:text="Số dư:"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_sua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="215dp"
+            android:layout_marginTop="95dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_edit_calendar_24"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnGhiChiTieu"
+        android:layout_width="262dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="10dp"
+        android:lineSpacingExtra="4sp"
+        android:text="Ghi chi tiêu"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnGhiMucTieu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnGhiMucTieu"
+        android:layout_width="262dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="10dp"
+        android:lineSpacingExtra="4sp"
+        android:text="Ghi mục tiêu"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnThongKeMucTieu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnThongKeMucTieu"
+        android:layout_width="262dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="10dp"
+        android:lineSpacingExtra="4sp"
+        android:text="Thống kê mục tiêu"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnThongKeThuChi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnThongKeThuChi"
+        android:layout_width="262dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="60dp"
+        android:lineSpacingExtra="4sp"
+        android:text="Thống kê thu chi"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".NguoiDung">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        app:title="Thông tin người dùng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/background_color_2">
+
+        <EditText
+            android:id="@+id/edt_ten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Họ và tên:"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/edt_sodu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:hint="Số dư hiện tại:"
+            android:inputType="number"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btn_luuNguoiDung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lưu"
+            android:layout_margin="20dp"/>
+
+    </LinearLayout>
+    
+</LinearLayout>

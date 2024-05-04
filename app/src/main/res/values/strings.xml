@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BTL-QuanLyThuChi</string>
+    <string name="action_them_moi">them_moi</string>
+    <string name="action_sua_xoa">sua_xoa</string>
+
+</resources>
